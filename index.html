@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Adding language meta tag -->
+    <meta name="language" content="ar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updating title to include keywords -->
+    <title>جمعية الرحيم - أصدقاء متلازمة داون - دعم أطفال متلازمة داون في فلسطين</title>
+    <!-- Updating meta description to include keywords -->
+    <meta name="description"
+        content="جمعية الرحيم - أصدقاء متلازمة داون في فلسطين، متخصصة في دعم أطفال مرض متلازمة داون، تقدم خدمات التأهيل والدمج للأطفال ذوي الاحتياجات الخاصة. ساهموا بالتبرع والصدقة لدعم العناية بأطفال متلازمة داون في فلسطين.">
+    <!-- Adding meta keywords including target keywords -->
+    <meta name="keywords"
+        content="جمعية الرحيم, متلازمة داون, مرض, أعراض, تبرع, صدقة, احتياجات خاصة, كروموسوم, فلسطين, العناية, طفل, Down Syndrome, disease, symptoms, donation, charity, special needs, chromosome, Palestine, care, child">
+    <!-- Adding canonical link -->
+    <link rel="canonical" href="https://www.yourwebsite.com/your-page">
+    <!-- Adding Open Graph meta tags -->
+    <meta property="og:title" content="جمعية الرحيم - دعم أطفال متلازمة داون في فلسطين">
+    <meta property="og:description" content="جمعية الرحيم - أصدقاء متلازمة داون في فلسطين. تهدف الجمعية لدمج وتأهيل أطفال متلازمة داون من خلال التدخل المبكر وخدمات التأهيل المختلفة المتخصصة. ساهم بالتبرع والصدقة لدعم العناية بالأطفال ذوي الاحتياجات الخاصة.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/your-page">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/og-image.jpg">
+    <meta property="og:locale" content="ar_AR">
+    <!-- Adding Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="جمعية الرحيم - دعم أطفال متلازمة داون في فلسطين">
+    <meta name="twitter:description" content="جمعية الرحيم - أصدقاء متلازمة داون في فلسطين. تهدف الجمعية لدمج وتأهيل أطفال متلازمة داون من خلال التدخل المبكر وخدمات التأهيل المختلفة المتخصصة. ساهم بالتبرع والصدقة لدعم العناية بالأطفال ذوي الاحتياجات الخاصة.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/images/og-image.jpg">
+    <!-- Implementing Structured Data (Schema Markup) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "جمعية الرحيم - أصدقاء متلازمة داون",
+      "alternateName": "Al-Raheem Association - Friends of Down Syndrome",
+      "url": "https://www.yourwebsite.com/your-page",
+      "logo": "https://www.yourwebsite.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+970595616425",
+        "contactType": "customer service",
+        "areaServed": "PS",
+        "availableLanguage": ["Arabic", "ar"]
+      },
+      "description": "جمعية الرحيم - أصدقاء متلازمة داون في فلسطين، متخصصة في دعم أطفال مرض متلازمة داون، تقدم خدمات التأهيل والدمج للأطفال ذوي الاحتياجات الخاصة. ساهموا بالتبرع والصدقة لدعم العناية بأطفال متلازمة داون في فلسطين.",
+      "keywords": "داون, متلازمة, مرض, أعراض, تبرع, صدقة, احتياجات خاصة, كروموسوم, فلسطين, العناية, طفل, Down, syndrome, disease, symptoms, donation, charity, special needs, chromosome, Palestine, care, child",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "البيرة، فوق سوبرماركت الشرفة",
+          "addressLocality": "رام الله",
+          "addressCountry": "PS"
+        }
+      },
+      "sameAs": [
+        "https://www.facebook.com/YourPage",
+        "https://www.twitter.com/YourPage",
+        "https://www.instagram.com/YourPage"
+      ]
+    }
+    </script>
+    <!-- Existing favicon -->
+    <link rel="icon" href="images/icon.svg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            height: 70px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header nav {
+            display: flex;
+            justify-content: center;
+            gap: 2vw;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .header a:hover {
+            color: turquoise;
+        }
+
+        .header a.active {
+            color: turquoise;
+        }
+
+        .container {
+            padding-top: 0;
+        }
+
+        .intro {
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+            margin-top: 0;
+            background-image: url('images/0.jpg');
+        }
+
+        .intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            opacity: 0;
+            transition: opacity 1s ease;
+            z-index: 1;
+        }
+
+        .intro h1,
+        .intro p,
+        .intro a,
+        .contact-info a {
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 2s forwards;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .intro h1 {
+            font-size: 3em;
+            margin: 0;
+            animation-delay: 0.5s;
+        }
+
+        .intro p {
+            font-size: 1.5em;
+            animation-delay: 1s;
+        }
+
+        .intro a,
+        .contact-info a {
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: rgb(198, 255, 253);
+            text-shadow: 1px 1px 2px black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            animation-delay: 1.5s;
+            transition: background-color 0.3s;
+        }
+
+        .intro a:hover,
+        .contact-info a:hover {
+            color: #1896e9;
+        }
+
+        section {
+            position: relative;
+            margin-top: 30px;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-size: cover;
+            background-position: center center;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            overflow: hidden;
+            background-attachment: fixed;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            opacity: 0;
+            transition: opacity 1s ease;
+            z-index: 1;
+        }
+
+        section h2,
+        section p,
+        section ul {
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .visible h2,
+        .visible p,
+        .visible ul,
+        .visible img {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .visible::before {
+            opacity: 1;
+        }
+
+        .intro p {
+            transition: none;
+            opacity: 0;
+        }
+
+        .link {
+            color: rgb(198, 255, 253);
+            text-shadow: 1px 1px 2px black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .friendship-tips {
+            background-image: url('images/11.jpg');
+        }
+
+        .chromosome-love {
+            background-image: url('images/6.jpg');
+        }
+
+        .community-integration {
+            background-image: url('images/3.jpg');
+        }
+
+        .unique-intelligence {
+            background-image: url('images/4.jpg');
+        }
+
+        .support {
+            background-image: url('images/12.jpg');
+        }
+
+        .diagnosis-guidance {
+            background-image: url('images/7.jpg');
+        }
+
+        .speech-therapy {
+            background-image: url('images/8.jpg');
+        }
+
+        .psychological-support {
+            background-image: url('images/5.jpg');
+        }
+
+        .contact-info {
+            background-image: url('images/2.jpg');
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header a {
+                font-size: 0.7em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="#intro">الرئيسية</a>
+            <a href="#friendship-tips">صداقة</a>
+            <a href="#chromosome-love">حب</a>
+            <a href="#community-integration">اندماج</a>
+            <a href="#unique-intelligence">ذكاء</a>
+            <a href="#support">تبرع</a>
+            <a href="#diagnosis-guidance">تشخيص</a>
+            <a href="#speech-therapy">نطق</a>
+            <a href="#psychological-support">نفسي</a>
+            <a href="#contact-info">تواصل</a>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Your existing content remains unchanged -->
+        <!-- Intro Section -->
+        <section id="intro" class="intro">
+            <h1>جمعية الرحيم - أصدقاء متلازمة داون</h1>
+            <p>تهدف 🎯 الجمعية لدمج وتأهيل أطفال متلازمة داون من خلال التدخل المبكر وخدمات التأهيل المختلفة المتخصصة. 🌟
+            </p>
+            <a href="#contact-info"> تواصل معنا ☎️</a>
+        </section>
+        <!-- Friendship Tips Section -->
+        <section id="friendship-tips" class="friendship-tips">
+            <h2>ليس من الصعب تكوين صداقات مع أطفال متلازمة داون 😍</h2>
+            <p>ولهذا ننصحكم دائمًا عند مخاطبتهم 🤗:</p>
+            <p>🟠 استخدام لغة بسيطة وجمل قصيرة مع دعم الحديث بالإشارات والتعبيرات الجسدية واليدوية. 👋</p>
+            <p>🟠 إعطاؤهم الوقت الكافي لاستيعاب الحديث لتسريع عملية التقبل والاندماج. ⏳</p>
+            <p>🟠 تشجيعهم الدائم من خلال تعزيز سلوكياتهم الجيدة. 👍</p>
+            <p>🟠 مقابلتهم بوجه بشوش وبابتسامة دائمة. 😊</p>
+            <p>وفي جمعية رحيم نقدم لكم جميع النصائح والطرق الصحيحة للتعامل مع أطفال متلازمة داون بكل حب وإيجابية 🥰🥰
+            </p>
+        </section>
+        <!-- Chromosome Love Section -->
+        <section id="chromosome-love" class="chromosome-love">
+            <h2>الفرق فقط بكروموسوم واحد إضافي! 🧬</h2>
+            <p>نعم هو كروموسوم السعادة والحب والنقاء، ومن هنا جاءت التسمية "متلازمة الحب" 😍😍</p>
+            <p>بادلوهم الحب، ليزدادوا حُبًّا ونشاطًا 🤗</p>
+            <p>وفي جمعية رحيم نقدم لكم كل الحب والدعم لأطفالكم طوال الوقت 🥰</p>
+        </section>
+        <!-- Community Integration Section -->
+        <section id="community-integration" class="community-integration">
+            <h2>الاندماج المجتمعي 🌍</h2>
+            <p>لتسريع وتحسين عملية العلاج للأطفال المصابين بمتلازمة داون، علينا بإدماجهم في المجتمع وإشراكهم في النشاطات
+                المجتمعية بشكل دائم ومتواصل 🤗</p>
+            <p>وفي جمعية رحيم نوفر لكم البيئة الآمنة والمناسبة لإدماج أطفالكم بكل راحة وسعادة 😍</p>
+        </section>
+        <!-- Unique Intelligence Section -->
+        <section id="unique-intelligence" class="unique-intelligence">
+            <h2>يتميز أطفال متلازمة داون بذكائهم المتفرد 🧠</h2>
+            <p>وببراءتهم غير المتناهية! 😍</p>
+            <p>🔴 طفل متلازمة داون قادر على الاندماج في المجتمع بسهولة تامة، حيث يساعدهم ذكاؤهم وتركيزهم على تحليل
+                المواقف والتعامل معها بشكل طبيعي تمامًا! 🌟</p>
+            <p>🔴 طفل متلازمة داون ليس مختلفًا، هو متفرد بكيانه الخاص 🤗</p>
+            <p>وفي جمعية الرحيم نقدم كامل الحب والدعم لكم ولأطفالكم ❤️</p>
+        </section>
+        <!-- Support Section -->
+        <section id="support" class="support">
+            <h2>الدعم والتبرعات 💰</h2>
+            <p>من أجل ضمان استمرار الخدمات التأهيلية للأطفال 🏢</p>
+            <p>نتوجه لكم بأن تكون الجمعية أحد أهدافكم لتقديم تبرعاتكم وصدقاتكم 🤲</p>
+            <p>اجعل لك صدقة جارية بمبلغ قليل وذلك عن طريق ارسال رسالة باحد الارقام (1.2.3) (1. 3 شيكل، 2. 5 شيكل، 3. 10 شيكل ) على رقم 4020  من خلال شبكتي جوال او اوريدو.. 🪙</p>
+            <p>دمتم ودام عطاء شعبنا العظيم 🌟</p>
+        </section>
+        <!-- Diagnosis Guidance Section -->
+        <section id="diagnosis-guidance" class="diagnosis-guidance">
+            <h2>إرشادات بعد التشخيص 📝</h2>
+            <p>بعد مرحلة التشخيص التي تؤكد إصابة الطفل بمتلازمة داون، على الأهل:</p>
+            <p>🔴 المتابعة مع جهات متخصصة بالتعامل مع مصابي متلازمة داون، تجنُّبًا للوقوع بالأخطاء التي قد تؤثر سلبًا
+                على نفسية الطفل والوالدين. 🧑‍⚕️</p>
+            <p>🔴 تعزيز أجواء التقبل والإيجابية بين أفراد العائلة وبين الطفل، لبناء جسر متين وقوي مع الطفل لحمايته من كل
+                أنواع التنمر أو الإيذاء النفسي أو الجسدي. 🛡️</p>
+            <p>🔴 ومعاملة الطفل بشكل طبيعي تمامًا. 🤝</p>
+            <p>🔴 وفي جمعية رحيم نقدم لكم كافة النصائح اللازمة للأهالي لمعرفة التعامل مع الأطفال حديثي الولادة المصابين
+                بمتلازمة داون بكل حب وإيجابية دون خوف أو تردد. 💖</p>
+        </section>
+        <!-- Speech Therapy Section -->
+        <section id="speech-therapy" class="speech-therapy">
+            <h2>علاج النطق 🗣️</h2>
+            <p>هل تشعر بأن ابنك أو ابنتك من ذوي متلازمة داون يعاني من صعوبة في التعلم أو تأخر في النطق؟ 🤔</p>
+            <p>جمعية رحيم توفر جلسات علاج النطق التي نعمل من خلالها على تنمية مهارات التواصل عند أطفال متلازمة داون، عن
+                طريق تمارين علاج مخارج الأصوات وتقوية العضلات التي تستخدم في الكلام. 💪</p>
+        </section>
+        <!-- Psychological Support Section -->
+        <section id="psychological-support" class="psychological-support">
+            <h2>الدعم النفسي والاجتماعي 🤗</h2>
+            <p>تقوم جمعية الرحيم بتقديم الدعم والإرشاد الاجتماعي، وتوفير جلسات العلاج النفسي لأهالي أطفال متلازمة داون،
+                حيث نقوم بدعم الأهل معنويًّا، 💬</p>
+            <p>ومساعدتهم على فهم حالة طفلهم، من خلال الإجابة على جميع استفساراتهم، وتصحيح المعلومات الخاطئة لديهم. 📚
+            </p>
+            <p>ومن خلال هذه الجلسات، سيزداد مدى تقبل الأهالي لأطفالهم ورغبتهم في تطويرهم مما يعزز النتائج الإيجابية من
+                التدخل المبكر. 🌱</p>
+        </section>
+        <!-- Contact Info Section -->
+        <section id="contact-info" class="contact-info">
+            <h2>تواصل معنا 📬</h2>
+            <p>📍 عنواننا: البيرة، فوق سوبرماركت الشرفة، رام الله - فلسطين 🗺️</p>
+            <p>✉️ البريد الإلكتروني: <a target="_blank" class="link"
+                    href="mailto:raheem_ds@mail.com">raheem_ds@mail.com</a></p>
+            <p>📱 تواصلوا معنا عبر الرقم: <a target="_blank" class="link" href="tel:0595616425">0595616425</a></p>
+            <a href="#intro"> العودة إلى البداية ⬆️</a>
+        </section>
+    </div>
+    <script>
+        function removeDrawer() {
+            header = document.getElementsByTagName('header')[0];
+            if (window.innerHeight < 700) {
+                document.getElementsByTagName('header')[0].style.display = 'none';
+            }
+            else {
+                document.getElementsByTagName('header')[0].style.display = 'flex';
+            }
+
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.height = window.innerHeight;
+            });
+        }
+        removeDrawer();
+
+        const isNotTouchable = !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.header nav a');
+
+        function findExactMiddleSection() {
+            const viewportMiddle = window.innerHeight / 2;
+
+            for (let i = 0; i < sections.length; i++) {
+                const section = sections[i];
+                const rect = section.getBoundingClientRect();
+                const sectionMiddle = rect.top + rect.height / 2;
+
+                if (Math.abs(viewportMiddle - sectionMiddle) < 1) {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
+        function findNearestSectionIndex() {
+            const sections = document.querySelectorAll('section');
+            const viewportMiddle = window.innerHeight / 2 + window.scrollY;
+
+            let closestIndex = -1;
+            let closestDistance = Infinity;
+
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const sectionMiddle = rect.top + window.scrollY + rect.height / 2;
+                const distance = Math.abs(viewportMiddle - sectionMiddle);
+
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            return closestIndex;
+        }
+
+        window.scrollTo({
+            top: sections[0].offsetTop + (sections[0].offsetHeight / 2) - (window.innerHeight / 2),
+            behavior: 'smooth'
+        });
+
+        let sectionIndex = 0;
+        let isScrolling = false;
+        function handleScroll() {
+            if (isScrolling) return;
+            isScrolling = true;
+            let exactMiddleSection = findExactMiddleSection();
+            sectionIndex = exactMiddleSection != -1 ? exactMiddleSection : sectionIndex;
+
+            const scrollingBound = 20;
+
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const middleOfScreen = windowHeight / 2;
+
+                const sectionBigHalfHeight = rect.height - scrollingBound;
+                const sectionSmallHalfHeight = scrollingBound;
+                const sectionMiddle = rect.top + rect.height / 2;
+
+                if (sectionMiddle < middleOfScreen + sectionBigHalfHeight && sectionMiddle > middleOfScreen - sectionBigHalfHeight) {
+                    if (isNotTouchable) {
+                        if (index == sectionIndex) {
+                            if (sectionMiddle <= middleOfScreen + sectionSmallHalfHeight && sectionMiddle >= middleOfScreen - sectionSmallHalfHeight) {
+                                window.scrollTo({
+                                    top: section.offsetTop + section.offsetHeight / 2 - middleOfScreen,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                        else {
+                            window.scrollTo({
+                                top: section.offsetTop + section.offsetHeight / 2 - middleOfScreen,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                    if (sectionMiddle < middleOfScreen + 200 && sectionMiddle > middleOfScreen - 200) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                }
+            });
+
+            let near = findNearestSectionIndex();
+            navLinks.forEach((link, index) => {
+                if (index === near) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            setTimeout(() => {
+                isScrolling = false;
+            }, 10);
+        }
+
+        window.addEventListener('resize', removeDrawer);
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+        handleScroll();
+    </script>
+</body>
+
+</html>
