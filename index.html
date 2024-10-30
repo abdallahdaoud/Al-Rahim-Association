@@ -182,22 +182,20 @@
         }
 
         section {
-    position: relative;
-    margin-top: 30px;
-    width: 100%; /* Changed from 100vw to prevent horizontal scrollbar */
-    min-height: 100vh; /* Changed from height to min-height for better responsiveness */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; /* Added to create smooth parallax effect */
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    overflow: hidden; /* Added to prevent any potential overflow issues */
+            position: relative;
+            margin-top: 30px;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-size: cover;
+            background-position: center center;
+            color: white;
+            text-shadow: 1px 1px 2px black;
         }
 
         section::before {
